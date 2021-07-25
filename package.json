@@ -18,7 +18,7 @@
     "url": "https://github.com/SkyaTura/faker-nuxt"
   },
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "^5.5.3"
   },
   "devDependencies": {
     "@emiolo/babel-config": "^1.1.0",
