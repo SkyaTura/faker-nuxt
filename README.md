@@ -1,5 +1,8 @@
 # faker-nuxt
 
+![Build passing](https://github.com/zacpez/faker-nuxt/actions/workflows/test.yml/badge.svg)
+![Build passing](https://raw.githubusercontent.com/zacpez/faker-nuxt/master/badges/coverage-global%20coverage.svg)
+
 > A simple [Faker](https://www.npmjs.com/package/faker) wrapper for [Nuxt.js](https://nuxtjs.org/)
 
 ## Features

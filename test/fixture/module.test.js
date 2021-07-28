@@ -2,7 +2,7 @@ import { Nuxt, Builder } from 'nuxt-edge'
 import { config } from './nuxt.config'
 
 let nuxt
-const host = 3030
+const host = 'localhost'
 const port = 3030
 
 const url = (path) => `http://${host}:${port}${path}`
