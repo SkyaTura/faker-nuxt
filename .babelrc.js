@@ -1,3 +1,9 @@
 module.exports = {
-  presets: ['@emiolo/babel-config'],
+  presets: ['@babel/preset-env'],
+  plugins: [
+    [
+      '@babel/plugin-transform-runtime',
+      {regenerator: true},
+    ]
+  ]
 }
