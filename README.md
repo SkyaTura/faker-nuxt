@@ -1,5 +1,6 @@
 # faker-nuxt
 
+[![Project Status: Abandoned – Initial development has started, but there has not yet been a stable, usable release; the project has been abandoned and the author(s) do not intend on continuing development.](http://www.repostatus.org/badges/latest/abandoned.svg)](http://www.repostatus.org/#abandoned)
 ![Build passing](https://github.com/zacpez/faker-nuxt/actions/workflows/test.yml/badge.svg)
 ![Build passing](https://raw.githubusercontent.com/zacpez/faker-nuxt/master/badges/coverage-global%20coverage.svg)
 
