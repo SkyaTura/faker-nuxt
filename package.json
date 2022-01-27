@@ -1,6 +1,6 @@
 {
   "name": "faker-nuxt",
-  "version": "1.0.1",
+  "version": "6.0.0-alpha.5",
   "keywords": [
     "faker",
     "nuxt"
@@ -8,7 +8,6 @@
   "description": "A Faker wrapper for Nuxt.",
   "main": "src/module.js",
   "scripts": {
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Antonio Eduardo (SkyaTura) <antonio@skyatura.com.br>",
@@ -18,11 +17,6 @@
     "url": "https://github.com/SkyaTura/faker-nuxt"
   },
   "dependencies": {
-    "faker": "^4.1.0"
-  },
-  "devDependencies": {
-    "@emiolo/babel-config": "^1.1.0",
-    "@emiolo/eslint-config": "^1.1.8",
-    "eslint": "^7.3.1"
+    "@faker-js/faker": "^6.0.0-alpha.5"
   }
 }

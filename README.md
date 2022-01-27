@@ -1,6 +1,6 @@
 # faker-nuxt
 
-> A simple [Faker](https://www.npmjs.com/package/faker) wrapper for [Nuxt.js](https://nuxtjs.org/)
+> A simple [Faker](https://www.npmjs.com/package/@faker-js/faker) wrapper for [Nuxt.js](https://nuxtjs.org/)
 
 ## Features
 
