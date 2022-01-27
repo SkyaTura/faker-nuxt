@@ -1,6 +1,13 @@
 # faker-nuxt
 
-> A simple [Faker](https://www.npmjs.com/package/@faker-js/faker) wrapper for [Nuxt.js](https://nuxtjs.org/)
+> [Faker](https://www.npmjs.com/package/@faker-js/faker) wrapper for [Nuxt.js](https://nuxtjs.org/)
+
+[![version](https://img.shields.io/npm/v/faker-nuxt?label=faker-nuxt)](https://www.npmjs.com/package/faker-nuxt)
+[![npm (scoped)](https://img.shields.io/npm/v/@faker-js/faker?label=@faker-js/faker)](https://www.npmjs.com/package/@faker-js/faker)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/faker-nuxt)
+![node-current (scoped)](https://img.shields.io/node/v/@faker-js/faker)
+![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/faker-nuxt)
+[![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
 
 ## Features
 
