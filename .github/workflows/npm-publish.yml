@@ -1,0 +1,48 @@
+name: npm-publish
+on:
+  push:
+    branches:
+      - main # Change this to your default branch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      package: ${{ steps.package.outputs.value }}
+      faker: ${{ steps.faker.outputs.value }}
+    steps:
+      - uses: actions/checkout@v1
+      - name: Extract version from faker-nuxt
+        uses: sergeysova/jq-action@v2
+        id: package
+        with:
+          cmd: >
+            jq .version package-lock.json -r
+      - name: Extract version from @faker-js/faker
+        uses: sergeysova/jq-action@v2
+        id: faker
+        with:
+          cmd: >
+            jq '.dependencies."@faker-js/faker".version' package-lock.json -r
+  bump:
+    runs-on: ubuntu-latest
+    needs: check
+    if: ${{ needs.check.outputs.package != needs.check.outputs.faker }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 17
+          registry-url: https://registry.npmjs.org/
+      - name: Run npm version
+        run: |
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'skyatura@users.noreply.github.com'
+          npm version ${{ needs.check.outputs.faker }}
+      - name: Publish on npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Push updates
+        run: >
+          git push
