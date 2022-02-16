@@ -6,7 +6,8 @@
     "nuxt"
   ],
   "description": "A Faker wrapper for Nuxt.",
-  "main": "src/module.js",
+  "main": "lib/module.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,6 @@
     "url": "https://github.com/SkyaTura/faker-nuxt"
   },
   "dependencies": {
-    "@faker-js/faker": "^6.0.0-alpha.5"
+    "@faker-js/faker": "^6.0.0-alpha.6"
   }
 }
